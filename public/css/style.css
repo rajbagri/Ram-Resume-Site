@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+    --myBlack: #2B2730;
+    --dullWhite: rgba(255, 255, 255, 0.7);
+    --myGreen: #CBE4DE;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all ease 0.3s;
+}
+
+body{
+    background-color: var(--myBlack);
+}
+
+::-webkit-scrollbar{
+    width: 1.5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--myGreen);
+}
+
+#home{
+    color: var(--dullWhite);
+}
+
+nav{
+    min-height: 100vh;
+    width: fit-content;
+}
+
+.tabs{
+    justify-content: space-around;
+    background-color: lightcoral;
+    padding-left: 1vmax;
+    padding-right: 10vmax;
+    background-color: black;
+    width: 100%;
+    border: 2px solid green;
+}
+
+.tabs a{
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--dullWhite);
+    font-size: 1.1vmax;
+    width: max-content;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tabs a:hover{
+    color: white;
+}
+
+.menu{
+    padding-top: 1vmax;
+}
+
+.menu i{
+    font-size: 2.2vmax;
+    color: white;
+}
+
+.menu i:hover{
+    color: var(--myGreen);
+}
+
+.hero{
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hero .right img{
+    height: 18vmax;
+    filter: drop-shadow(0 0 80px white);
+    transition: all ease 0.5s;
+}
+
+.hero .right img:hover{
+    filter: drop-shadow(0 0 90px white);
+}
+
+.hero .left h1{
+    font-size: 3vmax;
+}
+.hero .left h2{
+    font-size: 2vmax;
+}
+.hero .left span{
+    font-size: 1.5vmax;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+.hero .left span::first-letter{
+    color: red;
+    font-size: 1.8vmax;
+    font-weight: 600;
+}
+
+.description{
+    line-height: 2;
+    margin-top: 10px;
+    font-size: 1.1vmax;
+}
+
+footer{
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vmax 1.5vmax;
+    font-size: 1vmax;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9vmax;
+    text-transform: uppercase;
+    transition: all ease 0.1s;
+}
+
+footer a:hover{
+    color: lightgray;
+}
+
+footer .left{
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    padding-left: 0px;
+    /* border: 2px solid red; */
+}
+
+.dropdown {
+      /* border: 2px solid red; */
+      /* height: 60px; */
+      width: 300px;
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-again{
+    position: relative;
+    display: inline-block;
+      /* border: 2px solid red; */
+      width: 100%;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    min-width: 160px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px 0px rgba(116, 106, 106, 0.533);
+    z-index: 1;
+}
+.dropdown-content-again{
+    box-shadow: 0px 0px 16px 0px rgba(116, 106, 106, 0.533);
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    background-color: black;
+    color:white;
+      width:150px;
+      top:10px;
+  z-index: 50;
+  left:160px;
+  }
+  .dropdown-content-again p{
+      font-size:20px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:5px 10px;
+  }
+  .dropdown-content-again p:hover{
+      background-color: #f1f1f1;
+        color: black;
+        cursor: pointer;
+        overflow: hidden;
+  }
+  .dropdown-content a {
+    color: white;
+    font-weight: 600;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: black;
+    overflow: hidden;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background: rgba(0, 0, 0, 0.553);;
+  }
+  .dropdown-again:hover .dropdown-content-again{
+      display:block;
+      }

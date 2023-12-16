@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/utils.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/media.css">
+
+    <link rel="shortcut icon" href="public/resources/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="home" class="flex">
+        <nav class="flex">
+            <div class="tabs flex-column hidden">
+                <a href="#home">Home</a>
+                <a href="public/resources/ram resume final.pdf" download="Ramkrishna CV">Download CV</a>
+                <div>
+                    <div class="dropdown">
+                        <!-- <button class="dropbtn">Dropdown</button> -->
+                        <!-- <button href="#" class="dropbtn" id="positions-btn">Positions of Responsibities</button> -->
+                        <a href="#" class="dropbtn" id="positions-btn">Positions of Responsibities</a>
+                        <div class="dropdown-content">
+                        <div class="dropdown-again">
+                            <a href="#"  id="links">VISION-CSE: Executive</a>
+                        </div>
+                        <a href="#">ISTE-SC MANIT: Executive</a>
+                        </div>
+                      </div>
+                </div>
+                <!-- <a href="#" id="positions-btn">Positions of Responsibities</a> -->
+                <!-- <div id="positions-dropdown" class="hidden"> -->
+                    <!-- Add your content for Positions of Responsibilities here -->
+                    <!-- <p>VISION-CSE: Executive</p> -->
+                    <!-- <p>ISTE-SC MANIT: Executive at iste</p> -->
+                    <!-- Add more positions as needed -->
+                <!-- </div> -->
+
+                <div>
+                    <div class="dropdown">
+                        <!-- <button class="dropbtn">Dropdown</button> -->
+                        <!-- <button href="#" class="dropbtn" id="positions-btn">Positions of Responsibities</button> -->
+                        <a href="#" class="dropbtn" id="positions-btn">Skills</a>
+                        <div class="dropdown-content">
+                        <a href="#">Language:- C,C++</a>
+                        <a href="#">DSA</a>
+                        <a href="#">Competitive</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div>
+                    <div class="dropdown">
+                        <!-- <button class="dropbtn">Dropdown</button> -->
+                        <!-- <button href="#" class="dropbtn" id="positions-btn">Positions of Responsibities</button> -->
+                        <a href="#" class="dropbtn" id="positions-btn">Education</a>
+                        <div class="dropdown-content">
+                        <a href="#">Passed 10th with 90.6% from The Palladian House, Barwaha(M.P.)</a>
+                        <a href="#">Passed 12th with 90.0% from Swaraj Bal Niketan, Badud(M.P.)</a>
+                        <a href="#">Currently at MANIT pursuing B-Tech in Computer Science (2026)</a>
+                        </div>
+                      </div>
+                </div>
+                
+                <a href="public/contact.html">Contact me</a>
+            </div>
+            <div class="menu">
+                <i class="ri-menu-3-line pointer" id="hamburger"></i>
+                <i class="ri-close-line pointer hidden" id="close"></i>
+            </div>
+        </nav>
+        
+        <div class="hero flex">
+            <div class="left half-width">
+                <h2>Hi I am</h2>
+                <h1>Ramkrishna Birla</h1>
+                <span>Student,</span>
+                <span>Programmer,</span>
+                <span>Apprentice</span>
+                <p class="description">
+                    Currently I am pursuing B-Tech in Computer Science from MANIT- BHOPAL. Have played Kabaddi at district level in 2021. Also dedicated my 2 years in chilli business.
+                    I am a passionate learner and eager to learn various new technologies.
+                </p>
+            </div>
+            <div class="right">
+                <img src="public/resources/circle .jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer class="flex">
+        <div class="left flex">
+            <a href="https://instagram.com/rkb_1048?igshid=MTNiYzNiMzkwZA==">instagram</a>
+            <a href="https://www.linkedin.com/in/ramkrishna-birla-98b826259/">linkedin</a>
+            <a href="rkbirla1048@gmail.com">Email</a>
+            <a href="https://auth.geeksforgeeks.org/user/rkbirleiav">Geeks for geeks</a>
+        </div>
+        <div class="right">
+            <p>All Rights Reserved</p>
+            <p>&copy; 2023</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="public/js/script.js"></script>
+    <script>
+        // Add click event listener to toggle the visibility of the positions dropdown
+        $(document).ready(function() {
+            $("#positions-btn").click(function() {
+                $("#positions-dropdown").toggleClass("hidden");
+            });
+        });
+    </script>
+</body>
+</html>
+

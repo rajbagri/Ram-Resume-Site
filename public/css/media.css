@@ -1,0 +1,142 @@
+@media (max-width: 768px){
+    .tabs a{
+        font-size: 1.3vw;
+    }
+    .hero .left h1{
+        font-size: 3.5vw;
+    }
+    .hero .left h2{
+        font-size: 2.5vw;
+    }
+    .hero .left span{
+        font-size: 1.8vw;
+    }
+    .hero .left span::first-letter{
+        font-size: 2vw;
+    }
+    .description{
+        font-size: 1.2vw;
+    }
+    footer{
+        font-size: 1.2vw;
+    }
+    footer a{
+        font-size: 1.1vw;
+    }
+}
+
+@media (max-width: 650px){
+    .hero{
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+    .hero .right img{
+        height: 15vw;
+    }
+    footer{
+        font-size: 1.4vw;
+    }
+    footer a{
+        font-size: 1.2vw;
+        letter-spacing: 0.5px;
+    }
+    .menu i{
+        font-size: 2.7vw;
+    }
+    .hero .right img{
+        height: 25vw;
+    }
+}
+
+@media (max-width: 500px){
+    .tabs{
+        padding-right: 13vw;
+    }
+    .tabs a{
+        font-size: 1.8vw;
+    }
+    .hero .left h1{
+        font-size: 4vw;
+    }
+    .hero .left h2{
+        font-size: 3vw;
+    }
+    .hero .left span{
+        font-size: 2.2vw;
+    }
+    .hero .left span::first-letter{
+        font-size: 2.5vw;
+    }
+    .description{
+        font-size: 1.5vw;
+    }
+    footer{
+        font-size: 1.5vw;
+    }
+    footer a{
+        font-size: 1.3vw;
+    }
+    .hero .left{
+        width: 80%;
+    }
+    footer .left{
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    .menu i{
+        font-size: 3.5vw;
+    }
+}
+
+/* For mobiles */
+@media (max-width: 430px){
+    .hero .right img{
+        height: 25vh;
+    }
+    .menu i{
+        font-size: 3.5vh;
+    }
+    .tabs a{
+        font-size: 1.8vh;
+        margin: 1.5vh 0;
+    }
+    .hero .left h1{
+        font-size: 4vh;
+    }
+    .hero .left h2{
+        font-size: 3vh;
+    }
+    .hero .left span{
+        font-size: 2.2vh;
+    }
+    .hero .left span::first-letter{
+        font-size: 2.5vh;
+    }
+    .description{
+        font-size: 1.5vh;
+    }
+    footer{
+        font-size: 1.5vh;
+        flex-direction: column;
+        padding: 1.2vh;
+        align-items: start;
+        min-height: 15vh;
+        font-size: 1.7vh;
+    }
+    footer a{
+        font-size: 1.5vh;
+    }
+    .hero .left{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .tabs{
+        position: absolute;
+        padding: 2vh 1vh;
+    }
+    #close{
+        position: absolute;
+        left: 39%;
+    }
+}
